@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+  <h1 id="title">Cotação de Moedas</h1>
+
+  <main>
+    <form class="container">
+        <label for="moedas">Moeda: </label>
+        <select id="moedas">
+          <option value="None">None</option>
+        </select>
+    </form>
+
+    <table class="actual">
+      <thead>
+        <th>Ultima cotação</th>
+        <th>Data e Hora</th>
+        <th>Valor min.</th>
+        <th>Valor max.</th>
+        <th>Fechamento</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <form class="container">
+  
+      <div class="choices">
+        <label for="date-in">Data de Início: </label>
+        <input type="date" id="date-in" />
+      </div>
+  
+      <button type="button" id="show">Show</button>
+      
+      <div class="choices">
+        <label for="date-out">Data de Fim: </label>
+        <input type="date" id="date-out" />
+      </div>
+
+    </form>
+    
+    <table class="period">
+      <thead>
+        <th>Ultima cotação</th>
+        <th>Data e Hora</th>
+        <th>Valor min.</th>
+        <th>Valor max.</th>
+        <th>Fechamento</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+      
+  </main>
+  
+  
+  <script src="script.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
